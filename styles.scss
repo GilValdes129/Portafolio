@@ -1,0 +1,50 @@
+$background-color-header: #4f6d7a;
+$background-color-main: #4a6fa5;
+$font-color: #dbe9ee;
+$font-family: 'Oswald', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 10px;
+    font-family: $font-family;
+    color: $font-color;
+    header{
+        background-color: $font-color;
+        color: black;
+        .container{
+            .row{
+                .MyName{
+                    h1{
+                        font-size: 35px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+    main{
+        background-color: $background-color-main;
+        .container{
+            .row{
+  
+                #AboutMe{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Presentacion h1{
+        text-align: center;
+    }
+
+
+}

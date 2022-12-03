@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  color: #dbe9ee;
+}
+body header {
+  background-color: #dbe9ee;
+  color: black;
+}
+body header .container .row .MyName h1 {
+  font-size: 35px;
+}
+body main {
+  background-color: #4a6fa5;
+}
+body main .container .row #AboutMe {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .Presentacion h1 {
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
