@@ -18,12 +18,98 @@ body header .container .row .MyName h1 {
 body main {
   background-color: #4a6fa5;
 }
+body main .container {
+  padding-top: 1%;
+}
+body main .container .row div {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+body main .container .row div img {
+  max-width: 600px;
+  height: auto;
+}
 body main .container .row #AboutMe {
   text-align: center;
+}
+body main .container .row div {
+  margin: 0;
+}
+body main .container .row div div {
+  width: 50%;
+}
+body main .container .MyWorks {
+  text-align: center;
+  font-size: 80px;
+}
+body main .container #Principalwork {
+  text-align: center;
+  background-color: #4f6d7a;
+}
+body main .container #Principalwork div a img {
+  width: 500px;
+  height: auto;
+}
+body main .container #Principalwork h2 a {
+  color: #dbe9ee;
+  text-decoration: none;
+  background-color: #166088;
+  padding: 0 9%;
+  padding-bottom: 15px;
+}
+body main .container #Principalwork h2 a:hover {
+  color: gold;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+body main .container #Principalwork h3 a {
+  color: #dbe9ee;
+  text-decoration: none;
+  background-color: #166088;
+  padding: 0 15%;
+}
+body main .container #Principalwork h3 a:hover {
+  color: gold;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+body main .container .MyFutureWorks {
+  text-align: center;
+  font-size: 40px;
+}
+body main .container .carousel {
+  width: 50%;
+  margin-left: 25%;
+}
+body main .container .carousel .carousel-inner .carousel-item {
+  width: 100%;
+}
+body main .container .carousel .carousel-inner .carousel-item img {
+  margin-bottom: 20px;
+}
+body footer {
+  background-color: #166088;
+}
+body footer h4 {
+  font-size: 20px;
+}
+body footer h4 i {
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 450px) {
   .Presentacion h1 {
     text-align: center;
+  }
+  body main .container .row div img {
+    max-width: 100%;
+  }
+  body main .container .carousel {
+    margin-left: 0;
+    width: 100%;
+  }
+  body main .container #Principalwork h3 a {
+    padding: 0 26%;
   }
 }/*# sourceMappingURL=styles.css.map */

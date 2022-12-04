@@ -17,6 +17,7 @@ body{
         color: black;
         .container{
             .row{
+
                 .MyName{
                     h1{
                         font-size: 35px;
@@ -31,20 +32,116 @@ body{
     main{
         background-color: $background-color-main;
         .container{
+            padding-top: 1%;
             .row{
-  
+                div{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        max-width: 600px;
+                        height: auto;
+                    }
+                }
                 #AboutMe{
                     text-align: center;
                 }
+                div{
+                    margin: 0;
+                    div{
+                        width: 50%;
+                    }
+                }
+            }
+            .MyWorks{
+                text-align: center;
+                font-size: 80px;
+                
+            }
+            #Principalwork{
+                text-align: center;
+                background-color: $background-color-header;
+
+                div{
+                    a {
+                        img{
+                            width: 500px;
+                            height: auto;
+                        }
+                    }
+                    }
+                    h2{
+                        a{
+                            color: $font-color;
+                            text-decoration: none;
+                            background-color: #166088;
+                            padding: 0 9%;
+                            padding-bottom: 15px;
+                        }
+                        a:hover{
+                            color: gold;
+                            font-weight: 900;
+                            transition: all .3s;
+                        }
+                    }
+                    h3{
+                        a{
+                            color: $font-color;
+                            text-decoration: none;
+                            background-color: #166088;
+                            padding: 0 15%;
+                        }
+                        a:hover{
+                            color: gold;
+                            font-weight: 900;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            .MyFutureWorks{
+                text-align: center;
+                font-size: 40px;
+            }
+            .carousel{
+                width: 50%;
+                margin-left: 25%;
+                .carousel-inner{
+
+                    .carousel-item{
+                        width: 100%;
+                        img{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            }    
+    }
+    footer{
+        background-color: #166088;
+        h4{
+            font-size: 20px;
+            i{
+                padding-right: 5px;
             }
         }
     }
 }
+
 
 @media screen and (max-width: 450px) {
     .Presentacion h1{
         text-align: center;
     }
 
-
+    body main .container .row div img {
+        max-width: 100%;
+    }
+    body main .container .carousel {
+        margin-left: 0;
+        width: 100%;
+    }
+    body main .container #Principalwork h3 a{
+        padding: 0 26%;
+    }
 }
